@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота</title>
+
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+
+    <!-- Підключення нестандартного шрифту -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Підключення іконкового шрифту -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #007bff;
+            transform: scale(1.15);
+        }
+
+        section {
+            padding: 30px;
+            margin: 25px 0;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+        }
+
+        .icon-section div {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .icon-section div:hover {
+            transform: translateY(-12px);
+        }
+
+        .icon-section i {
+            font-size: 60px;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .icon-section i:hover {
+            color: #ff6f61;
+        }
+
+        .graphics {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+        }
+
+        .graphics div {
+            width: 28%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .graphics div:hover {
+            transform: scale(1.15);
+        }
+
+        .graphics img, .graphics svg {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ced4da;
+            border-radius: 8px;
+            box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .extra-section {
+            margin: 25px 0;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border: 1px solid #007bff;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .extra-section:hover {
+            background-color: #e2e6ea;
+        }
+
+        .color-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .color-section div {
+            width: 28%;
+            height: 160px;
+            border-radius: 12px;
+            text-align: center;
+            line-height: 160px;
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .color-section div:hover {
+            transform: rotate(7deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .color1 { background-color: #fd7e14; }
+        .color2 { background-color: #20c997; }
+        .color3 { background-color: #6610f2; }
+        .color4 { background-color: #ffc107; }
+
+        .animate {
+            animation: fadeIn 1.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №3</h1>
+        <img src="favicon.svg" alt="Логотип сайту" style="width: 60px; height: 60px; margin-top: 15px;">
+        <p class="animate">Дослідження та практика з веб-програмування</p>
+    </header>
+
+    <nav>
+        <a href="#section1">Шрифти</a>
+        <a href="#section2">Іконки</a>
+        <a href="#section3">Графіка</a>
+        <a href="#section4">Додатковий контент</a>
+    </nav>
+
+    <section id="section1">
+        <h2 style="font-family: 'Playfair Display', serif;">Шрифти</h2>
+        <p style="font-family: 'Roboto', sans-serif;">Цей текст оформлений за допомогою шрифту Google Fonts для покращення читабельності.</p>
+        <p style="font-family: 'Playfair Display', serif;">А цей текст демонструє використання нестандартного шрифту Playfair Display для заголовків.</p>
+        <p>Додавання шрифтів дозволяє урізноманітнити дизайн веб-сторінки та зробити її унікальною.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Іконки</h2>
+        <div class="icon-section">
+            <div>
+                <i class="fas fa-globe"></i>
+                <p>Світ</p>
+            </div>
+            <div>
+                <i class="fas fa-star"></i>
+                <p>Популярне</p>
+            </div>
+            <div>
+                <i class="fas fa-heart"></i>
+                <p>Обране</p>
+            </div>
+        </div>
+        <p>Іконки допомагають покращити взаємодію користувачів із сайтом.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Графіка</h2>
+        <div class="graphics">
+            <div>
+                <img src="img/image1.jpg" alt="PNG зображення 1">
+            </div>
+            <div>
+                <img src="img/image2.jpg" alt="PNG зображення 2">
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#eeea01;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#e60909;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="40" fill="url(#grad1)" />
+                    <text x="50" y="50" font-family="Playfair Display" font-size="5" text-anchor="middle" fill="#E0B4B9">
+                        <tspan x="50" dy="-1.2em">SVG зображення</tspan>
+                        <tspan x="50" dy="1.2em">група КІ-402</tspan>
+                        <tspan x="50" dy="1.2em">Середа Дмитро</tspan>
+                    </text>
+                </svg>
+            </div>
+        </div>
+        <p>Графічні елементи додають сайту професійного вигляду.</p>
+    </section>
+
+    <section id="section4">
+        <h2>Додатковий контент</h2>
+        <div class="color-section">
+            <div class="color1">Оранжевий</div>
+            <div class="color2">Зелений</div>
+            <div class="color3">Фіолетовий</div>
+        </div>
+        <div class="extra-section">
+            <h3>Робота з SVG</h3>
+            <p>SVG-зображення створені для демонстрації сучасного підходу до графіки на сайті.</p>
+            <p>Градієнти, анімації та інтеграція тексту є невід'ємною частиною веб-дизайну.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Лабораторна робота. Всі права захищено.</p>
+    </footer>
+</body>
+</html>

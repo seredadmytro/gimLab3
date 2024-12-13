@@ -1,0 +1,148 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #4CAF50;
+    transform: scale(1.2);
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.icon-section div {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.icon-section div:hover {
+    transform: translateY(-10px);
+}
+
+.icon-section i {
+    font-size: 50px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+.icon-section i:hover {
+    color: #E0B4B9;
+}
+
+.graphics {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.graphics div {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.graphics div:hover {
+    transform: scale(1.1);
+}
+
+.graphics img, .graphics svg {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.extra-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.extra-section:hover {
+    background-color: #B3D2E0;
+}
+
+.color-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.color-section div {
+    width: 30%;
+    height: 150px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-section div:hover {
+    transform: rotate(5deg);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color1 { background-color: #E0DFB4; }
+.color2 { background-color: #E0B4B9; }
+.color3 { background-color: #B3D2E0; }
+.color4 { background-color: #5D7D8B; }
+
+.animate {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
